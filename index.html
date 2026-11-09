@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Says Memory</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="game-wrapper">
+        <section class="top-panel">
+            <h1>Simon Says</h1>
+            <p id="message">Tap Start and remember the color pattern.</p>
+
+            <div class="stats">
+                <div class="stat-box">
+                    <span>Level</span>
+                    <strong id="level">0</strong>
+                </div>
+
+                <div class="stat-box">
+                    <span>Best</span>
+                    <strong id="bestScore">0</strong>
+                </div>
+            </div>
+
+            <button id="startBtn">Start Game</button>
+        </section>
+
+        <section class="game-board" aria-label="Simon Says color board">
+            <button class="color-btn green" id="green" data-color="green" aria-label="Green"></button>
+            <button class="color-btn red" id="red" data-color="red" aria-label="Red"></button>
+            <button class="color-btn yellow" id="yellow" data-color="yellow" aria-label="Yellow"></button>
+            <button class="color-btn blue" id="blue" data-color="blue" aria-label="Blue"></button>
+
+            <div class="center-badge">Watch</div>
+        </section>
+
+        <section class="game-over" id="gameOver">
+            <h2>Game Over</h2>
+            <p>Your final level was <strong id="finalLevel">0</strong>.</p>
+            <button id="playAgainBtn">Play Again</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
